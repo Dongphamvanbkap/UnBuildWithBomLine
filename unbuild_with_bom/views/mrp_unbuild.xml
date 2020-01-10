@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="of_mrp_unbuild_form_view" model="ir.ui.view">
+            <field name="name">Lệnh Tháo Dỡ</field>
+            <field name="model">mrp.unbuild</field>
+            <field name="inherit_id" ref="mrp.mrp_unbuild_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group[1]" position="after">
+                    <notebook>
+                        <page string="Sản lượng thực tế">
+                            <field name="unbuild_lines">
+                                <tree string="Thông tin chung" editable="bottom" create="false">
+                                    <field name="product_id" string="Sản phẩm"/>
+                                    <field name="bom_product_qty"/>
+                                    <field name="real_product_qty"/>
+                                    <field name="uom_id"/>
+                                    <field name="difference"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <!-- Active Units of Measure-->
+        <record id="of_config_settings_group_uom" model="res.config.settings">
+            <field name="group_uom" eval="1"/>
+        </record>
+
+        <function model="res.config.settings" name="execute">
+            <value eval="[ref('of_config_settings_group_uom')]"/>
+            <value eval="{}"/>
+        </function>
+
+        <!-- Set Currency of VND-->
+        <record id="base.main_company" model="res.company">
+            <field name="currency_id" ref="base.VND"/>
+        </record>
+
+
+    </data>
+</odoo>

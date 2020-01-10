@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <!-- Product Tempalte-->
+        <record id="of_product_template_1" model="product.template">
+            <field name="name">Lợn hơi</field>
+            <field name="categ_id" ref="product.product_category_all"/>
+            <field name="type">product</field>
+             <field name="standard_price">120000</field>
+            <field name="list_price">150000</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="uom_po_id" ref="uom.product_uom_kgm"/>
+            <field name="description_sale">Lợn hơi nguyên con.</field>
+        </record>
+
+        <record id="of_product_template_2" model="product.template">
+            <field name="name">Sườn</field>
+            <field name="categ_id" ref="product.product_category_all"/>
+            <field name="type">product</field>
+            <field name="list_price">190000</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="uom_po_id" ref="uom.product_uom_kgm"/>
+        </record>
+
+        <record id="of_product_template_3" model="product.template">
+            <field name="name">Thịt ba chỉ</field>
+            <field name="categ_id" ref="product.product_category_all"/>
+            <field name="type">product</field>
+            <field name="list_price">200000</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="uom_po_id" ref="uom.product_uom_kgm"/>
+        </record>
+
+         <record id="of_product_template_4" model="product.template">
+            <field name="name">Bộ lòng</field>
+            <field name="categ_id" ref="product.product_category_all"/>
+            <field name="type">product</field>
+            <field name="list_price">700000</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="uom_po_id" ref="uom.product_uom_kgm"/>
+             <field name="description_sale">Đã làm sạch</field>
+        </record>
+
+        <record id="of_product_template_5" model="product.template">
+            <field name="name">Nạc vai</field>
+            <field name="categ_id" ref="product.product_category_all"/>
+            <field name="type">product</field>
+            <field name="list_price">195000</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="uom_po_id" ref="uom.product_uom_kgm"/>
+        </record>
+
+        <record id="of_product_template_6" model="product.template">
+            <field name="name">Xương ống</field>
+            <field name="categ_id" ref="product.product_category_all"/>
+            <field name="type">product</field>
+            <field name="list_price">80000</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="uom_po_id" ref="uom.product_uom_kgm"/>
+        </record>
+
+
+    </data>
+</odoo>
+
